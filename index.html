@@ -12,29 +12,151 @@
     <title>Hello, world!</title>
 </head>
 <body>
+<div class="row background-gallery">
+    <div class="column">
+        <img src="images/1.jpg">
+        <img src="images/2.png">
+        <img src="images/4.jpg">
+        <img src="images/5.jpg">
+        <img src="images/6.jpg">
+        <img src="images/7.jpg">
+        <img src="images/8.jpg">
+    </div>
+    <div class="column">
+        <img src="images/9.jpg">
+        <img src="images/8.jpg">
+        <img src="images/7.jpg">
+        <img src="images/6.jpg">
+        <img src="images/5.jpg">
+        <img src="images/4.jpg">
+        <img src="images/3.jpg">
+    </div>
+    <div class="column">
+        <img src="images/5.jpg">
+        <img src="images/4.jpg">
+        <img src="images/3.jpg">
+        <img src="images/2.png">
+        <img src="images/1.jpg">
+        <img src="images/7.jpg">
+        <img src="images/8.jpg">
+    </div>
+    <div class="column">
+        <img src="images/6.jpg">
+        <img src="images/7.jpg">
+        <img src="images/8.jpg">
+        <img src="images/9.jpg">
+        <img src="images/1.jpg">
+        <img src="images/3.jpg">
+        <img src="images/5.jpg">
+    </div>
+</div>
+
 <div class="main-portfolio">
     <div class="container">
         <div class="main-portfolio__title">Неформальная история города в серии бронзовых мини-скульптур</div>
         <div class="main-portfolio__content">
-            <p>Проект Izde_Tap - посвящен неформальной истории города Алматы, и ее символам. Это культурный проект, целью которого является популяризация пеших прогулок по городу и ознакомление с неформальной историей города.  Задача проекта – ознакомление с неофициальной историей города. И для этого не нужен гид, ведь, сами мини-скульптуры станут гидами - помощниками, которые расскажут историю города и его жителей.</p>
+            <p>Проект Izde_Tap - это культурный проект, посвященный неформальной истории города Алматы, и ее символам.</p>
 
-            <p>Почему проект называется Iзде_Тап?</p>
-            <p>Мини-скульптуры будут размещены так, что найдя одну, ознакомившись с ее историей, люди захотят найти следующую, а значит, ему необходимо искать, найти, узнать.</p>
+            <p>Цель проекта - ознакомление с неофициальной историей посредством мини-скульптур и популяризация пеших прогулок по городу. Основная идея проекта состоит в том, что посредством мини-скульптур ознакомить жителей и гостей города с историей и культурой города, где всегда было и есть место эстетике и художественному вкусу.</p>
 
-            <p>Описание проекта: Размещение мини-скульптур с изображением самых  знаковых «символов» Алматы на улицах Алматы. Рядом с каждой мини-скульптурой будет размещен QR-код, по которому можно перейти на сайт с информацией.</p>
+            <p><b>Описание проекта:</b></p>
 
-            <p>Вы можете стать партнером проекта, участвуя в нем, компании не просто повышают знание бренда, но и вносят вклад в развитие Алматы.</p>
+            <p>Это мини-скульптуры со знаковыми «символами» города, размещенные на улицах Алматы так что, найдя одну и ознакомившись с ее историей, появится желание найти следующую, а значит, необходимо искать, найти - Izde_Tap. Рядом с каждой мини-скульптурой будет размещен QR-код, по которому можно перейти на сайт с информацией на казахском, русском и английском языках.</p>
 
-            <p>Приглашаю вас стать партнером проекта!</p>
+            <p><b>Задачи проекта:</b></p>
 
-            <p>Контакты:</p>
-            <p>+77089831303</p>
-            <p>e-mail:</p>
+            <p>§ знакомить, просвещать жителей и гостей с историей города, где есть место не только важным моментам в истории общества, но и искусству - музыке, живописи, актерскому искусству и т.д.</p>
+
+            <p>§ создать и распространить материалы о неформальной истории городе</p>
+
+            <p>§ продвигать искусство, интеллектуальность и эстетику города.</p>
+
+            <p><b>Целевая аудитория города:</b> жители и гости Алматы.</p>
+
+            <p>Проект будет реализован при активной поддержке и помощи со стороны партнеров. Мы приглашаем компании стать партнером проекта! Поддерживая культуру, вы можете представить внешнему миру свою систему ценностей и культуру. А также, повысить знание бренда, и внести вклад в развитие Алматы!</p>
+
+            <p><b>Контакты:</b></p>
+            <p>тел: +77072477871</p>
+            <p>e-mail: gulmira@izde-tap.kz</p>
         </div>
         <div class="main-portfolio__btn">
-            <a href="">
+            <a href="#subscribe" data-toggle="modal">
                 Стать партнером
             </a>
+        </div>
+
+    </div>
+    <div class="modal" id="subscribe" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Стать партнером</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body p-4">
+                    <form class="form-horizontal" action="/contact-form.php">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="name">Имя:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="tel">Телефон:</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="tel" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="company">Компания:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="company" placeholder="" required>
+                            </div>
+                        </div>
+<!--                        <div class="form-group">-->
+<!--                            <label class="control-label col-sm-2" for="type">Тип участия:</label>-->
+<!--                            <div class="col-sm-10">-->
+<!--                                <div class="dropdown">-->
+<!--                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example-->
+<!--                                        <span class="caret"></span></button>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li><a href="#">Генеральный партнер</a></li>-->
+<!--                                        <li><a href="#">Партнер по локаций</a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="message">Комментари:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="message" placeholder="">
+                            </div>
+                        </div>
+<!--                        <div class="form-group">-->
+<!--                            <div class="col-sm-offset-2 col-sm-10">-->
+<!--                                <div class="checkbox">-->
+<!--                                    <label><input type="checkbox"> Remember me</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">закрыть</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
