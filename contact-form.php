@@ -1,41 +1,24 @@
 <?php
-
-/* Задаем переменные */
-$name = htmlspecialchars($_POST["name"]);
-$email = htmlspecialchars($_POST["email"]);
-$tel = htmlspecialchars($_POST["tel"]);
-$website = htmlspecialchars($_POST["company"]);
-$message = htmlspecialchars($_POST["message"]);
-$bezspama = htmlspecialchars($_POST["bezspama"]);
-
-/* Ваш адрес и тема сообщения */
-$address = "kazakh_stan@mail.ru";
-$sub = "Сообщение с сайта ХХХ";
-
-/* Формат письма */
-$mes = "Сообщение с сайта ХХХ.\n
-Имя отправителя: $name
-Электронный адрес отправителя: $email
-Телефон отправителя: $tel
-Сайт отправителя: $website
-Текст сообщения:
-$message";
-
-
-if (empty($bezspama)) /* Оценка поля bezspama - должно быть пустым*/
-{
-/* Отправляем сообщение, используя mail() функцию */
-$from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
-if (mail($address, $sub, $mes, $from)) {
-    header('Refresh: 5; URL=https://biznessystem.ru');
-    echo '
-
-    Письмо отправлено, через 5 секунд вы вернетесь на страницу XXX%MINIFYHTML957ccaa915c72968a108b93da06f704510%';}
-else {
-    header('Refresh: 5; URL=https://biznessystem.ru');
-    echo '
-
-    Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY';}
+$name = $_GET['name']; // Вытаскиваем имя в переменную
+$email = $_GET['email']; // Вытаскиваем почту в переменную
+$phone = $_GET['phone'];
+$message = $_GET['message'];
+$company = $_GET['company'];
+$type = $_GET['type'];
+$recepient = "dorynbay@izde-tap.kz";
+$sitename = "izde-tap.kz";
+$pagetitle = "Новая заявка с сайта \"$sitename\"";
+$headers = "Content-type: text/plain; charset=\"utf-8\"\n From: no-reply@izde-tap.kz";
+$messageStr = "\r\n 
+имя: \"$name\" \r\n 
+email: \"$email\" \r\n 
+телефон: \"$phone\" \r\n 
+компания: \"$company\" \r\n 
+тип участия: \"$type\" \r\n 
+сообщение: \"$message\"";
+if (mail($recepient, $pagetitle, $messageStr, $headers)) {
+    echo "<p>Сообщение успешно отправлено</p>";
+} else {
+    echo "<p>Ошибка, попробуйте еще раз</p>";
 }
-exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
 ?>
