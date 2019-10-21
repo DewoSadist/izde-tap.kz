@@ -5,7 +5,7 @@ $phone = $_GET['phone'];
 $message = $_GET['message'];
 $company = $_GET['company'];
 $type = $_GET['type'];
-$recepient = "dorynbay@izde-tap.kz";
+$recepient = "gulmira@izde-tap.kz";
 $sitename = "izde-tap.kz";
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
 $headers = "Content-type: text/plain; charset=\"utf-8\"\n From: no-reply@izde-tap.kz";
