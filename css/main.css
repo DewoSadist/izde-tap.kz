@@ -47,7 +47,7 @@ body {
     margin-bottom: 55px;
 }
 .main-portfolio__content p {
-    text-shadow: 2px 2px 1px #000, 0 0 1em #fff;
+    text-shadow: 2px 1px 1px #000, 0 0 1em #fff;
 }
 .main-portfolio__btn a {
     display: block;
