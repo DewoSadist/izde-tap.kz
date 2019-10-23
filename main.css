@@ -1,10 +1,15 @@
 @font-face {
-    font-family: b52;
-    src: url('../fonts/b52.ttf');
+    font-family: 'B52';
+    src: url('/fonts/B52.eot');
+    src: url('/fonts/B52.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/B52.woff') format('woff'),
+    url('/fonts/B52.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 body {
     background-color: #000;
-    font-family: b52, "Courier New";
+    font-family: 'B52', "Courier New";
     /*background: url(../images/1.jpg)  center;*/
 }
 .main-portfolio {
@@ -19,7 +24,7 @@ body {
 }
 .main-portfolio__title {
     line-height: 65px;
-    font-family: b52,"Courier New";
+    font-family: 'B52',"Courier New";
     font-size: 45px;
     font-weight: bold;
     text-align: center;
@@ -36,7 +41,7 @@ body {
     }
     .main-portfolio__title {
         line-height: 30px;
-        font-family: "Courier New";
+        font-family: 'B52',"Courier New";
         font-size: 20px;
         font-weight: bold;
         text-align: center;
@@ -281,8 +286,9 @@ body {
     height: 68px;
     color: #fff;
     text-align: center;
-    line-height: 75px;
-    font-size: 40px;
+    /*line-height: 68px;*/
+    /*font-size: 30px;*/
+    padding: 15px;
     -webkit-animation: hoverWave linear 1s infinite;
     animation: hoverWave linear 1s infinite;
 }
@@ -313,6 +319,7 @@ body {
     animation-delay: .5s;
 }
 .pulse i  {
+    font-size: 40px;
     color: #ffffff;
     animation: 1200ms ease 0s normal none 1 running shake;
     animation-iteration-count: infinite;
