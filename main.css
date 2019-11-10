@@ -8,24 +8,26 @@
     font-style: normal;
 }
 body {
-    background-color: #000;
+    background-color: #ebebeb;
+    background-image: url("images/background.jpg");
     font-family: 'B52', "Courier New";
     /*background: url(../images/1.jpg)  center;*/
 }
+
 .main-portfolio {
     overflow: hidden;
     overflow-y: scroll;
     height: 100vh;
-    background-color:rgba(4,4,4,.4);
+    /*background-color:rgba(4,4,4,.4);*/
 
-    color: lemonchiffon;
-    padding-top: 115px;
+    color: #2a281f;
+    padding-top: 50px;
     padding-bottom: 0;
 }
 .main-portfolio__title {
-    line-height: 65px;
+    line-height: 30px;
     font-family: 'B52',"Courier New";
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     /*text-transform: uppercase;*/
@@ -76,6 +78,14 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
+.container {
+    width: 50%;
+}
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+}
 /* background image */
 .background-gallery {
     overflow: hidden;
@@ -86,6 +96,11 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+@media screen and (max-width: 800px) {
+    .row {
+        display: none!important;
+    }
 }
 
 .row{
